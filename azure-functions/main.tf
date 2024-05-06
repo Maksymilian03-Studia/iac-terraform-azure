@@ -31,5 +31,4 @@ resource "azurerm_function_app_function" "example" {
   name                = "test-function"
   function_app_name   = azurerm_linux_function_app.example.name
   resource_group_name = azurerm_resource_group.example.name
-  filename            = "${path.module}/test-function.zip"  # Zakładamy, że funkcja jest w pliku zip
-}
+  filename            = "${path.module}/test-function.zip" 

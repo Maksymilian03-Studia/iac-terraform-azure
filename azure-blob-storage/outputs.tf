@@ -1,3 +1,4 @@
-output "storage_blob_url" {
-  value = azurerm_storage_blob.example.url
+output "blob_url" {
+  description = "URL of the created blob"
+  value       = azurerm_storage_blob.example.url
 }
